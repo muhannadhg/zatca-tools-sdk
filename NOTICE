@@ -21,7 +21,3 @@ The ZATCA Tools name and mark (src/zatca_tools/pdf/zatca-tools-mark.png, printed
 in the footer of the default invoice design) belong to ZATCA Tools. The MIT
 licence covers the code, not the marks; InvoiceDesign(zatca_tools_mark=False)
 prints without them.
-
-"ZATCA" and "Fatoora" are names of the Zakat, Tax and Customs Authority of
-Saudi Arabia. This project is independent and is not affiliated with, endorsed
-or certified by the Authority.

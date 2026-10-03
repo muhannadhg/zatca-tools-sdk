@@ -12,7 +12,7 @@ Runs entirely in your environment: invoices are built, signed and hashed
 locally, and sent straight to ZATCA. Nothing passes through ZATCA Tools.
 """
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 from .client import Zatca  # noqa: E402
 from .csr import CsrRequest, KeyPair  # noqa: E402

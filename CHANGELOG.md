@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 — 2026-10-03
+
+- README and NOTICE: wording only.
+
 ## 0.1.2 — 2026-10-03
 
 - Help links: BR-CO-15 (invoice total with VAT) now opens its own guide in the ZATCA error reference, which documents 138 codes.

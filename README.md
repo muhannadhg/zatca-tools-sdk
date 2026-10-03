@@ -153,5 +153,3 @@ WooCommerce integrations, and a REST API.
 
 MIT — see [LICENSE](LICENSE) and [NOTICE](NOTICE) (including the bundled IBM
 Plex Sans Arabic font, SIL Open Font License, and the ZATCA Tools mark).
-Independent project; not affiliated with or endorsed by the Zakat, Tax and
-Customs Authority.
