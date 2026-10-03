@@ -90,7 +90,10 @@ def resolve(node):
 
 
 def test_there_are_snippets_to_check():
-    assert len(SNIPPETS) >= 8
+    # The README and the examples always; the site's pages too when this runs inside the ZATCA Tools repository.
+    assert len([w for w, _ in SNIPPETS if w.startswith("README")]) >= 4
+    assert len([w for w, _ in SNIPPETS if w.endswith(".py")]) >= 3
+    assert not SITE_VIEWS.is_dir() or len([w for w, _ in SNIPPETS if ".blade.php" in w]) >= 8
 
 
 @pytest.mark.parametrize("where, code", SNIPPETS, ids=[w for w, _ in SNIPPETS])
