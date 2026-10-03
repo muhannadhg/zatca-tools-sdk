@@ -17,10 +17,11 @@ Documentation: [Start here](https://zatcatools.com/docs/sdk) ·
 [Advanced](https://zatcatools.com/docs/sdk/advanced) ·
 [ZATCA error reference](https://zatcatools.com/en/docs/errors)
 
-> مكتبة بايثون مجانية ومفتوحة المصدر للربط مع هيئة الزكاة والضريبة والجمارك (منصة فاتورة)،
-> المرحلة الثانية من الفوترة الإلكترونية: إنشاء الفاتورة وتوقيعها ورمز QR، والتخليص والإبلاغ،
-> وفاتورة PDF/A-3 بالعربي والإنجليزي. تعمل داخل نظامك وتتصل بالهيئة مباشرة.
-> التوثيق: [zatcatools.com/docs/sdk](https://zatcatools.com/docs/sdk)
+> A free, open-source Python library for connecting to the Zakat, Tax and Customs
+> Authority (ZATCA) through its Fatoora platform — Phase 2 of Saudi e-invoicing:
+> create and sign invoices with their QR code, clear and report them, and print
+> PDF/A-3 invoices in Arabic and English. It runs inside your system and connects
+> to ZATCA directly. Documentation: [zatcatools.com/docs/sdk](https://zatcatools.com/docs/sdk)
 
 ## Install
 

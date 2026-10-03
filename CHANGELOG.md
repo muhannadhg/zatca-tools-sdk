@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 — 2026-10-03
+
+- README: the Fatoora paragraph in English.
+
 ## 0.1.0 — 2026-10-03
 
 First release.
