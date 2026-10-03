@@ -1,0 +1,184 @@
+{
+    "uuid": "8e6000cf-1a98-4174-b3e7-000000000010",
+    "lines": [
+        {
+            "name": "Server rack",
+            "quantity": 2.0,
+            "price": 4500.0,
+            "tax_category": "S",
+            "tax_reason_code": null,
+            "lineExtensionAmount": 9000.0
+        },
+        {
+            "name": "Installation",
+            "quantity": 1.0,
+            "price": 750.0,
+            "tax_category": "S",
+            "tax_reason_code": null,
+            "lineExtensionAmount": 750.0
+        }
+    ],
+    "totals": {
+        "line_total": 9750.0,
+        "discount": 0.0,
+        "exact_discount": null,
+        "document_allowance": 0.0,
+        "taxable": 9750.0,
+        "tax": 1462.5,
+        "grand": 11212.5
+    },
+    "payload": {
+        "uuid": "8e6000cf-1a98-4174-b3e7-000000000010",
+        "id": "INV-0010",
+        "issueDate": "2026-10-01",
+        "issueTime": "10:15:30",
+        "currencyCode": "SAR",
+        "taxCurrencyCode": "SAR",
+        "invoiceType": {
+            "invoice": "standard",
+            "type": "invoice"
+        },
+        "additionalDocuments": [
+            {
+                "id": "ICV",
+                "uuid": "7"
+            },
+            {
+                "id": "PIH",
+                "attachment": {
+                    "content": "NWZlY2ViNjZmZmM4NmYzOGQ5NTI3ODZjNmQ2OTZjNzljMmRiYzIzOWRkNGU5MWI0NjcyOWQ3M2EyN2ZiNTdlOQ==",
+                    "mimeCode": "base64",
+                    "mimeType": "text/plain"
+                }
+            },
+            {
+                "id": "QR"
+            }
+        ],
+        "supplier": {
+            "taxId": "399999999900003",
+            "registrationName": "شركة الاختبار للتجارة",
+            "identificationId": "1010010000",
+            "identificationType": "CRN",
+            "taxScheme": {
+                "id": "VAT"
+            },
+            "address": {
+                "street": "طريق الملك فهد",
+                "buildingNumber": "1234",
+                "subdivision": "العليا",
+                "city": "الرياض",
+                "postalZone": "12345",
+                "country": "SA"
+            }
+        },
+        "paymentMeans": {
+            "code": "10"
+        },
+        "invoiceLines": [
+            {
+                "id": 1,
+                "unitCode": "PCE",
+                "quantity": 2.0,
+                "lineExtensionAmount": 9000.0,
+                "item": {
+                    "name": "Server rack",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "S",
+                            "percent": 15.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 4500.0,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 1350.0,
+                    "roundingAmount": 10350.0
+                },
+                "tax_category": "S",
+                "tax_reason_code": null
+            },
+            {
+                "id": 2,
+                "unitCode": "PCE",
+                "quantity": 1.0,
+                "lineExtensionAmount": 750.0,
+                "item": {
+                    "name": "Installation",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "S",
+                            "percent": 15.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 750.0,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 112.5,
+                    "roundingAmount": 862.5
+                },
+                "tax_category": "S",
+                "tax_reason_code": null
+            }
+        ],
+        "taxTotal": {
+            "taxAmount": 1462.5,
+            "subTotals": [
+                {
+                    "taxableAmount": 9750.0,
+                    "taxAmount": 1462.5,
+                    "taxCategory": {
+                        "id": "S",
+                        "percent": 15.0,
+                        "taxScheme": {
+                            "id": "VAT"
+                        }
+                    }
+                }
+            ]
+        },
+        "legalMonetaryTotal": {
+            "lineExtensionAmount": 9750.0,
+            "taxExclusiveAmount": 9750.0,
+            "taxInclusiveAmount": 11212.5,
+            "allowanceTotalAmount": 0.0,
+            "prepaidAmount": 0,
+            "payableAmount": 11212.5
+        },
+        "customer": {
+            "taxId": "399999999800003",
+            "registrationName": "مؤسسة المشتري المحدودة",
+            "identificationId": "1010101010",
+            "identificationType": "CRN",
+            "taxScheme": {
+                "id": "VAT"
+            },
+            "address": {
+                "street": "شارع التحلية",
+                "buildingNumber": "8228",
+                "subdivision": "السليمانية",
+                "city": "الرياض",
+                "postalZone": "12244",
+                "country": "SA"
+            }
+        },
+        "delivery": {
+            "actualDeliveryDate": "2026-09-30"
+        }
+    },
+    "hash": "MgjmV7W/KHYHlmQINDovqdpOX/9HWGz1vFgiL8/cbAQ=",
+    "signed_hash": "7b0r2J3HWYCt/g9akH8lHkDMeVZbfiRG9wXCLK8la0w=",
+    "qr": "ASjYtNix2YPYqSDYp9mE2KfYrtiq2KjYp9ixINmE2YTYqtis2KfYsdipAg8zOTk5OTk5OTk5MDAwMDMDEzIwMjYtMTAtMDFUMTA6MTU6MzAECDExMjEyLjUwBQcxNDYyLjUwBiw3YjByMkozSFdZQ3QvZzlha0g4bEhrRE1lVlpiZmlSRzl3WENMSzhsYTB3PQdgTUVRQ0lBcnpZd0FrRVpWZU1CZ3JUK296WE95VUNCTHNDaVJ4cUtlS25oekhPem81QWlBK2pmLytSTVVqYkFsbTBDMTE5YVY3dGdQdXRvS2JlM1c5aXhWV3hlb3JMQT09CFgwVjAQBgcqhkjOPQIBBgUrgQQACgNCAATtP9TG5OU19NEGEebHasfpmQ46bxUAokq3c99EomZbOmTlkVq94jRsi7uwBPIUB2dkK+2IIolGjEAPx3YQLF7s"
+}

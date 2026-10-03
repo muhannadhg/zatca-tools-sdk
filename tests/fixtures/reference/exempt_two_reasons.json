@@ -1,0 +1,199 @@
+{
+    "uuid": "8e6000cf-1a98-4174-b3e7-000000000008",
+    "lines": [
+        {
+            "name": "Loan arrangement fee",
+            "quantity": 1.0,
+            "price": 500.0,
+            "tax_category": "E",
+            "tax_reason_code": "VATEX-SA-29",
+            "lineExtensionAmount": 500.0
+        },
+        {
+            "name": "Residential rent",
+            "quantity": 1.0,
+            "price": 3000.0,
+            "tax_category": "E",
+            "tax_reason_code": "VATEX-SA-30",
+            "lineExtensionAmount": 3000.0
+        }
+    ],
+    "totals": {
+        "line_total": 3500.0,
+        "discount": 0.0,
+        "exact_discount": null,
+        "document_allowance": 0.0,
+        "taxable": 3500.0,
+        "tax": 0.0,
+        "grand": 3500.0
+    },
+    "payload": {
+        "uuid": "8e6000cf-1a98-4174-b3e7-000000000008",
+        "id": "INV-0008",
+        "issueDate": "2026-10-01",
+        "issueTime": "10:15:30",
+        "currencyCode": "SAR",
+        "taxCurrencyCode": "SAR",
+        "invoiceType": {
+            "invoice": "standard",
+            "type": "invoice"
+        },
+        "additionalDocuments": [
+            {
+                "id": "ICV",
+                "uuid": "7"
+            },
+            {
+                "id": "PIH",
+                "attachment": {
+                    "content": "NWZlY2ViNjZmZmM4NmYzOGQ5NTI3ODZjNmQ2OTZjNzljMmRiYzIzOWRkNGU5MWI0NjcyOWQ3M2EyN2ZiNTdlOQ==",
+                    "mimeCode": "base64",
+                    "mimeType": "text/plain"
+                }
+            },
+            {
+                "id": "QR"
+            }
+        ],
+        "supplier": {
+            "taxId": "399999999900003",
+            "registrationName": "شركة الاختبار للتجارة",
+            "identificationId": "1010010000",
+            "identificationType": "CRN",
+            "taxScheme": {
+                "id": "VAT"
+            },
+            "address": {
+                "street": "طريق الملك فهد",
+                "buildingNumber": "1234",
+                "subdivision": "العليا",
+                "city": "الرياض",
+                "postalZone": "12345",
+                "country": "SA"
+            }
+        },
+        "paymentMeans": {
+            "code": "10"
+        },
+        "invoiceLines": [
+            {
+                "id": 1,
+                "unitCode": "PCE",
+                "quantity": 1.0,
+                "lineExtensionAmount": 500.0,
+                "item": {
+                    "name": "Loan arrangement fee",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "E",
+                            "percent": 0.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 500.0,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 0.0,
+                    "roundingAmount": 500.0
+                },
+                "tax_category": "E",
+                "tax_reason_code": "VATEX-SA-29"
+            },
+            {
+                "id": 2,
+                "unitCode": "PCE",
+                "quantity": 1.0,
+                "lineExtensionAmount": 3000.0,
+                "item": {
+                    "name": "Residential rent",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "E",
+                            "percent": 0.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 3000.0,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 0.0,
+                    "roundingAmount": 3000.0
+                },
+                "tax_category": "E",
+                "tax_reason_code": "VATEX-SA-30"
+            }
+        ],
+        "taxTotal": {
+            "taxAmount": 0.0,
+            "subTotals": [
+                {
+                    "taxableAmount": 500.0,
+                    "taxAmount": 0.0,
+                    "taxCategory": {
+                        "id": "E",
+                        "percent": 0.0,
+                        "taxScheme": {
+                            "id": "VAT"
+                        },
+                        "reasonCode": "VATEX-SA-29",
+                        "reason": "Financial services mentioned in Article 29 of the VAT Regulations"
+                    }
+                },
+                {
+                    "taxableAmount": 3000.0,
+                    "taxAmount": 0.0,
+                    "taxCategory": {
+                        "id": "E",
+                        "percent": 0.0,
+                        "taxScheme": {
+                            "id": "VAT"
+                        },
+                        "reasonCode": "VATEX-SA-30",
+                        "reason": "Real estate transactions mentioned in Article 30 of the VAT Regulations"
+                    }
+                }
+            ]
+        },
+        "legalMonetaryTotal": {
+            "lineExtensionAmount": 3500.0,
+            "taxExclusiveAmount": 3500.0,
+            "taxInclusiveAmount": 3500.0,
+            "allowanceTotalAmount": 0.0,
+            "prepaidAmount": 0,
+            "payableAmount": 3500.0
+        },
+        "customer": {
+            "taxId": "399999999800003",
+            "registrationName": "مؤسسة المشتري المحدودة",
+            "identificationId": "1010101010",
+            "identificationType": "CRN",
+            "taxScheme": {
+                "id": "VAT"
+            },
+            "address": {
+                "street": "شارع التحلية",
+                "buildingNumber": "8228",
+                "subdivision": "السليمانية",
+                "city": "الرياض",
+                "postalZone": "12244",
+                "country": "SA"
+            }
+        },
+        "delivery": {
+            "actualDeliveryDate": "2026-10-01"
+        }
+    },
+    "hash": "8pQHG2rM4W3qgSsmcftgfAU9RGHGCpQLB9Vtzc9c8x8=",
+    "signed_hash": "VbikhJzdTQBTOL/Yi+MvmS04xr4zlDUb9GediosE/Yw=",
+    "qr": "ASjYtNix2YPYqSDYp9mE2KfYrtiq2KjYp9ixINmE2YTYqtis2KfYsdipAg8zOTk5OTk5OTk5MDAwMDMDEzIwMjYtMTAtMDFUMTA6MTU6MzAEBzM1MDAuMDAFBDAuMDAGLFZiaWtoSnpkVFFCVE9ML1lpK012bVMwNHhyNHpsRFViOUdlZGlvc0UvWXc9B2BNRVlDSVFEdFkxckxtRU0wanRoSDIzdTBtTHpJWHhKQnFzYnMvRHNsK3R4RjJnNmlqUUloQUpFbXNLVVJTM3NrQ2tRN2o2UGE3ZHlEa2lMVDNRQ3R4c3hGQlZOMmRGOFcIWDBWMBAGByqGSM49AgEGBSuBBAAKA0IABO0/1Mbk5TX00QYR5sdqx+mZDjpvFQCiSrdz30SiZls6ZOWRWr3iNGyLu7AE8hQHZ2Qr7YgiiUaMQA/HdhAsXuw="
+}

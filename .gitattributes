@@ -1,0 +1,2 @@
+# Reference outputs of the ZATCA Tools platform: kept byte for byte, never line-ending-normalised.
+tests/fixtures/** -text

@@ -1,0 +1,232 @@
+{
+    "uuid": "8e6000cf-1a98-4174-b3e7-000000000007",
+    "lines": [
+        {
+            "name": "Shampoo",
+            "quantity": 1.0,
+            "price": 100.0,
+            "tax_category": "S",
+            "tax_reason_code": null,
+            "lineExtensionAmount": 100.0,
+            "exact_net": 100.00000000000001
+        },
+        {
+            "name": "Medicine",
+            "quantity": 2.0,
+            "price": 30.0,
+            "tax_category": "Z",
+            "tax_reason_code": "VATEX-SA-35",
+            "lineExtensionAmount": 60.0,
+            "exact_net": 60.0
+        },
+        {
+            "name": "Tip",
+            "quantity": 1.0,
+            "price": 20.0,
+            "tax_category": "O",
+            "tax_reason_code": "VATEX-SA-OOS",
+            "lineExtensionAmount": 20.0,
+            "exact_net": 20.0
+        }
+    ],
+    "totals": {
+        "line_total": 180.0,
+        "discount": 9.23,
+        "exact_discount": 9.230769230769232,
+        "document_allowance": 0.0,
+        "taxable": 170.77,
+        "tax": 14.23,
+        "grand": 185.0
+    },
+    "payload": {
+        "uuid": "8e6000cf-1a98-4174-b3e7-000000000007",
+        "id": "INV-0007",
+        "issueDate": "2026-10-01",
+        "issueTime": "10:15:30",
+        "currencyCode": "SAR",
+        "taxCurrencyCode": "SAR",
+        "invoiceType": {
+            "invoice": "simplified",
+            "type": "invoice"
+        },
+        "additionalDocuments": [
+            {
+                "id": "ICV",
+                "uuid": "7"
+            },
+            {
+                "id": "PIH",
+                "attachment": {
+                    "content": "NWZlY2ViNjZmZmM4NmYzOGQ5NTI3ODZjNmQ2OTZjNzljMmRiYzIzOWRkNGU5MWI0NjcyOWQ3M2EyN2ZiNTdlOQ==",
+                    "mimeCode": "base64",
+                    "mimeType": "text/plain"
+                }
+            },
+            {
+                "id": "QR"
+            }
+        ],
+        "supplier": {
+            "taxId": "399999999900003",
+            "registrationName": "شركة الاختبار للتجارة",
+            "identificationId": "1010010000",
+            "identificationType": "CRN",
+            "taxScheme": {
+                "id": "VAT"
+            },
+            "address": {
+                "street": "طريق الملك فهد",
+                "buildingNumber": "1234",
+                "subdivision": "العليا",
+                "city": "الرياض",
+                "postalZone": "12345",
+                "country": "SA"
+            }
+        },
+        "paymentMeans": {
+            "code": "10"
+        },
+        "invoiceLines": [
+            {
+                "id": 1,
+                "unitCode": "PCE",
+                "quantity": 1.0,
+                "lineExtensionAmount": 94.87,
+                "exact_net": 94.86956521739131,
+                "item": {
+                    "name": "Shampoo",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "S",
+                            "percent": 15.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 94.87,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 14.23,
+                    "roundingAmount": 109.1
+                },
+                "tax_category": "S",
+                "tax_reason_code": null
+            },
+            {
+                "id": 2,
+                "unitCode": "PCE",
+                "quantity": 2.0,
+                "lineExtensionAmount": 56.92,
+                "exact_net": 56.92,
+                "item": {
+                    "name": "Medicine",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "Z",
+                            "percent": 0.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 28.46,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 0.0,
+                    "roundingAmount": 56.92
+                },
+                "tax_category": "Z",
+                "tax_reason_code": "VATEX-SA-35"
+            },
+            {
+                "id": 3,
+                "unitCode": "PCE",
+                "quantity": 1.0,
+                "lineExtensionAmount": 18.98,
+                "exact_net": 18.98,
+                "item": {
+                    "name": "Tip",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "O",
+                            "percent": 0.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 18.98,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 0.0,
+                    "roundingAmount": 18.98
+                },
+                "tax_category": "O",
+                "tax_reason_code": "VATEX-SA-OOS"
+            }
+        ],
+        "taxTotal": {
+            "taxAmount": 14.23,
+            "subTotals": [
+                {
+                    "taxableAmount": 94.87,
+                    "taxAmount": 14.23,
+                    "taxCategory": {
+                        "id": "S",
+                        "percent": 15.0,
+                        "taxScheme": {
+                            "id": "VAT"
+                        }
+                    }
+                },
+                {
+                    "taxableAmount": 56.92,
+                    "taxAmount": 0.0,
+                    "taxCategory": {
+                        "id": "Z",
+                        "percent": 0.0,
+                        "taxScheme": {
+                            "id": "VAT"
+                        },
+                        "reasonCode": "VATEX-SA-35",
+                        "reason": "Medicines and medical equipment"
+                    }
+                },
+                {
+                    "taxableAmount": 18.98,
+                    "taxAmount": 0.0,
+                    "taxCategory": {
+                        "id": "O",
+                        "percent": 0.0,
+                        "taxScheme": {
+                            "id": "VAT"
+                        },
+                        "reasonCode": "VATEX-SA-OOS",
+                        "reason": "Outside scope of VAT"
+                    }
+                }
+            ]
+        },
+        "legalMonetaryTotal": {
+            "lineExtensionAmount": 170.77,
+            "taxExclusiveAmount": 170.77,
+            "taxInclusiveAmount": 185.0,
+            "allowanceTotalAmount": 0.0,
+            "prepaidAmount": 0,
+            "payableAmount": 185.0
+        }
+    },
+    "hash": "SLnX87DVFc3RnFJIUDRpH2or0LVzP2hPGLIYyGZbtb8=",
+    "signed_hash": "JlGJaFY6AoEUWoNSy7MWgKi9FATwngT2y66SDEvkL2s=",
+    "qr": "ASjYtNix2YPYqSDYp9mE2KfYrtiq2KjYp9ixINmE2YTYqtis2KfYsdipAg8zOTk5OTk5OTk5MDAwMDMDEzIwMjYtMTAtMDFUMTA6MTU6MzAEBjE4NS4wMAUFMTQuMjMGLEpsR0phRlk2QW9FVVdvTlN5N01XZ0tpOUZBVHduZ1QyeTY2U0RFdmtMMnM9B2BNRVFDSUY1NWZpV3V1WTFXdTEzVHM4cnl3OGxJcmdnZVJzMG5JSWpjSG9xK0lxU2hBaUJqaEhrN3lZVkVsM2dEbGJaemtCODZZQ0l2emU4UHJLVHc5SEtJdk0wbmRBPT0IWDBWMBAGByqGSM49AgEGBSuBBAAKA0IABO0/1Mbk5TX00QYR5sdqx+mZDjpvFQCiSrdz30SiZls6ZOWRWr3iNGyLu7AE8hQHZ2Qr7YgiiUaMQA/HdhAsXuwJSDBGAiEArIZS1itzTLzM/mxQOGvrHTuKzHFc+sSyqnjYz0A8B3cCIQDxzOavfbKlz59AgFGx57Wf67UFx9XetI2LQwyDB257Hw=="
+}

@@ -1,0 +1,27 @@
+ZATCA Tools SDK
+Copyright (c) 2026 ZATCA Tools
+
+The signature layout (XAdES template, the invoice-hash transform and the QR code
+TLV fields) follows the approach of saleh7/php-zatca-xml, which ZATCA accepts in
+production. No code from that project is included; its licence notice is
+reproduced here as a courtesy:
+
+  php-zatca-xml — MIT License — Copyright (c) 2023 ~/Saleh
+  https://github.com/Saleh7/php-zatca-xml
+
+Bundled font (src/zatca_tools/pdf/fonts): IBM Plex Sans Arabic, Copyright (c)
+2017 IBM Corp., with Reserved Font Name "Plex" — SIL Open Font License 1.1, full
+text in src/zatca_tools/pdf/fonts/OFL.txt. Distributed unmodified; the PDFs the
+SDK prints embed a subset of it, which the licence allows.
+
+Printed invoices use fpdf2 (LGPL-3.0), uharfbuzz (Apache-2.0) and segno
+(BSD-3-Clause), installed as separate, unmodified packages.
+
+The ZATCA Tools name and mark (src/zatca_tools/pdf/zatca-tools-mark.png, printed
+in the footer of the default invoice design) belong to ZATCA Tools. The MIT
+licence covers the code, not the marks; InvoiceDesign(zatca_tools_mark=False)
+prints without them.
+
+"ZATCA" and "Fatoora" are names of the Zakat, Tax and Customs Authority of
+Saudi Arabia. This project is independent and is not affiliated with, endorsed
+or certified by the Authority.

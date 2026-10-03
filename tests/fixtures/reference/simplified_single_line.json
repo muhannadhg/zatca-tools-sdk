@@ -1,0 +1,128 @@
+{
+    "uuid": "8e6000cf-1a98-4174-b3e7-000000000001",
+    "lines": [
+        {
+            "name": "خدمة استشارية",
+            "quantity": 1.0,
+            "price": 100.0,
+            "tax_category": "S",
+            "tax_reason_code": null,
+            "lineExtensionAmount": 100.0
+        }
+    ],
+    "totals": {
+        "line_total": 100.0,
+        "discount": 0.0,
+        "exact_discount": null,
+        "document_allowance": 0.0,
+        "taxable": 100.0,
+        "tax": 15.0,
+        "grand": 115.0
+    },
+    "payload": {
+        "uuid": "8e6000cf-1a98-4174-b3e7-000000000001",
+        "id": "INV-0001",
+        "issueDate": "2026-10-01",
+        "issueTime": "10:15:30",
+        "currencyCode": "SAR",
+        "taxCurrencyCode": "SAR",
+        "invoiceType": {
+            "invoice": "simplified",
+            "type": "invoice"
+        },
+        "additionalDocuments": [
+            {
+                "id": "ICV",
+                "uuid": "7"
+            },
+            {
+                "id": "PIH",
+                "attachment": {
+                    "content": "NWZlY2ViNjZmZmM4NmYzOGQ5NTI3ODZjNmQ2OTZjNzljMmRiYzIzOWRkNGU5MWI0NjcyOWQ3M2EyN2ZiNTdlOQ==",
+                    "mimeCode": "base64",
+                    "mimeType": "text/plain"
+                }
+            },
+            {
+                "id": "QR"
+            }
+        ],
+        "supplier": {
+            "taxId": "399999999900003",
+            "registrationName": "شركة الاختبار للتجارة",
+            "identificationId": "1010010000",
+            "identificationType": "CRN",
+            "taxScheme": {
+                "id": "VAT"
+            },
+            "address": {
+                "street": "طريق الملك فهد",
+                "buildingNumber": "1234",
+                "subdivision": "العليا",
+                "city": "الرياض",
+                "postalZone": "12345",
+                "country": "SA"
+            }
+        },
+        "paymentMeans": {
+            "code": "10"
+        },
+        "invoiceLines": [
+            {
+                "id": 1,
+                "unitCode": "PCE",
+                "quantity": 1.0,
+                "lineExtensionAmount": 100.0,
+                "item": {
+                    "name": "خدمة استشارية",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "S",
+                            "percent": 15.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 100.0,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 15.0,
+                    "roundingAmount": 115.0
+                },
+                "tax_category": "S",
+                "tax_reason_code": null
+            }
+        ],
+        "taxTotal": {
+            "taxAmount": 15.0,
+            "subTotals": [
+                {
+                    "taxableAmount": 100.0,
+                    "taxAmount": 15.0,
+                    "taxCategory": {
+                        "id": "S",
+                        "percent": 15.0,
+                        "taxScheme": {
+                            "id": "VAT"
+                        }
+                    }
+                }
+            ]
+        },
+        "legalMonetaryTotal": {
+            "lineExtensionAmount": 100.0,
+            "taxExclusiveAmount": 100.0,
+            "taxInclusiveAmount": 115.0,
+            "allowanceTotalAmount": 0.0,
+            "prepaidAmount": 0,
+            "payableAmount": 115.0
+        }
+    },
+    "hash": "Egm5xmfN95MfgApMWaWvQ1QuCionNXZDUo1IBBLULuo=",
+    "signed_hash": "9gOalb40pWs58xWF5CqArmJF8ETT1FFwjL7BGS2OC5Y=",
+    "qr": "ASjYtNix2YPYqSDYp9mE2KfYrtiq2KjYp9ixINmE2YTYqtis2KfYsdipAg8zOTk5OTk5OTk5MDAwMDMDEzIwMjYtMTAtMDFUMTA6MTU6MzAEBjExNS4wMAUFMTUuMDAGLDlnT2FsYjQwcFdzNTh4V0Y1Q3FBcm1KRjhFVFQxRkZ3akw3QkdTMk9DNVk9B2BNRVlDSVFDTmtIQzdRKzZmY1JHVUNyRXR1V0RQUi9yUmNLbzNEdGZCc1U0bDhyTzloUUloQUlCYXRNR0JaSUltOXRxRVFOZFd1bDFwQmdBNHo3azJsQUYyc0sxVHg5Q1oIWDBWMBAGByqGSM49AgEGBSuBBAAKA0IABO0/1Mbk5TX00QYR5sdqx+mZDjpvFQCiSrdz30SiZls6ZOWRWr3iNGyLu7AE8hQHZ2Qr7YgiiUaMQA/HdhAsXuwJSDBGAiEArIZS1itzTLzM/mxQOGvrHTuKzHFc+sSyqnjYz0A8B3cCIQDxzOavfbKlz59AgFGx57Wf67UFx9XetI2LQwyDB257Hw=="
+}

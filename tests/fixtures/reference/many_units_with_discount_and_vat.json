@@ -1,0 +1,168 @@
+{
+    "uuid": "8e6000cf-1a98-4174-b3e7-000000000015",
+    "lines": [
+        {
+            "name": "Bread",
+            "quantity": 12.0,
+            "price": 0.87,
+            "tax_category": "S",
+            "tax_reason_code": null,
+            "lineExtensionAmount": 10.44,
+            "exact_net": 10.434782608695652
+        },
+        {
+            "name": "Milk",
+            "quantity": 3.0,
+            "price": 5.65,
+            "tax_category": "S",
+            "tax_reason_code": null,
+            "lineExtensionAmount": 16.95,
+            "exact_net": 16.956521739130437
+        }
+    ],
+    "totals": {
+        "line_total": 27.39,
+        "discount": 2.61,
+        "exact_discount": 2.608695652173913,
+        "document_allowance": 0.0,
+        "taxable": 24.78,
+        "tax": 3.72,
+        "grand": 28.5
+    },
+    "payload": {
+        "uuid": "8e6000cf-1a98-4174-b3e7-000000000015",
+        "id": "INV-0013",
+        "issueDate": "2026-10-01",
+        "issueTime": "10:15:30",
+        "currencyCode": "SAR",
+        "taxCurrencyCode": "SAR",
+        "invoiceType": {
+            "invoice": "simplified",
+            "type": "invoice"
+        },
+        "additionalDocuments": [
+            {
+                "id": "ICV",
+                "uuid": "7"
+            },
+            {
+                "id": "PIH",
+                "attachment": {
+                    "content": "NWZlY2ViNjZmZmM4NmYzOGQ5NTI3ODZjNmQ2OTZjNzljMmRiYzIzOWRkNGU5MWI0NjcyOWQ3M2EyN2ZiNTdlOQ==",
+                    "mimeCode": "base64",
+                    "mimeType": "text/plain"
+                }
+            },
+            {
+                "id": "QR"
+            }
+        ],
+        "supplier": {
+            "taxId": "399999999900003",
+            "registrationName": "شركة الاختبار للتجارة",
+            "identificationId": "1010010000",
+            "identificationType": "CRN",
+            "taxScheme": {
+                "id": "VAT"
+            },
+            "address": {
+                "street": "طريق الملك فهد",
+                "buildingNumber": "1234",
+                "subdivision": "العليا",
+                "city": "الرياض",
+                "postalZone": "12345",
+                "country": "SA"
+            }
+        },
+        "paymentMeans": {
+            "code": "10"
+        },
+        "invoiceLines": [
+            {
+                "id": 1,
+                "unitCode": "PCE",
+                "quantity": 12.0,
+                "lineExtensionAmount": 9.48,
+                "exact_net": 9.440993788819876,
+                "item": {
+                    "name": "Bread",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "S",
+                            "percent": 15.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 0.79,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 1.38,
+                    "roundingAmount": 10.86
+                },
+                "tax_category": "S",
+                "tax_reason_code": null
+            },
+            {
+                "id": 2,
+                "unitCode": "PCE",
+                "quantity": 3.0,
+                "lineExtensionAmount": 15.3,
+                "exact_net": 15.341614906832302,
+                "item": {
+                    "name": "Milk",
+                    "classifiedTaxCategory": [
+                        {
+                            "id": "S",
+                            "percent": 15.0,
+                            "taxScheme": {
+                                "id": "VAT"
+                            }
+                        }
+                    ]
+                },
+                "price": {
+                    "amount": 5.1,
+                    "unitCode": "PIECE"
+                },
+                "taxTotal": {
+                    "taxAmount": 2.34,
+                    "roundingAmount": 17.64
+                },
+                "tax_category": "S",
+                "tax_reason_code": null
+            }
+        ],
+        "taxTotal": {
+            "taxAmount": 3.72,
+            "subTotals": [
+                {
+                    "taxableAmount": 24.78,
+                    "taxAmount": 3.72,
+                    "taxCategory": {
+                        "id": "S",
+                        "percent": 15.0,
+                        "taxScheme": {
+                            "id": "VAT"
+                        }
+                    }
+                }
+            ]
+        },
+        "legalMonetaryTotal": {
+            "lineExtensionAmount": 24.78,
+            "taxExclusiveAmount": 24.78,
+            "taxInclusiveAmount": 28.5,
+            "allowanceTotalAmount": 0.0,
+            "prepaidAmount": 0,
+            "payableAmount": 28.5
+        }
+    },
+    "hash": "9j5t8xzuMS8wtdM0SOwnONFg0AcPlCcVG5mVQk19VQ4=",
+    "signed_hash": "u15X+Hci4thLbUU9v6TloD+LEAOEpYPixuHB778GU9U=",
+    "qr": "ASjYtNix2YPYqSDYp9mE2KfYrtiq2KjYp9ixINmE2YTYqtis2KfYsdipAg8zOTk5OTk5OTk5MDAwMDMDEzIwMjYtMTAtMDFUMTA6MTU6MzAEBTI4LjUwBQQzLjcyBix1MTVYK0hjaTR0aExiVVU5djZUbG9EK0xFQU9FcFlQaXh1SEI3NzhHVTlVPQdgTUVRQ0lEbVZVZStrUm1YVk9mSWExNyt3aFdTamd1MzQwd2xxNWZHemJXamx4SklJQWlCMVBVUXJxSlBGcDhlNytuQlR1YXpUQ1dnU0FHeXhmVWVhd3JOWGk1bGgxQT09CFgwVjAQBgcqhkjOPQIBBgUrgQQACgNCAATtP9TG5OU19NEGEebHasfpmQ46bxUAokq3c99EomZbOmTlkVq94jRsi7uwBPIUB2dkK+2IIolGjEAPx3YQLF7sCUgwRgIhAKyGUtYrc0y8zP5sUDhr6x07isxxXPrEsqp42M9APAd3AiEA8czmr32ypc+fQIBRsee1n+u1BcfV3rSNi0MMgwduex8="
+}

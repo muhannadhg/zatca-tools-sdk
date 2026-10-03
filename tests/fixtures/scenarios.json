@@ -1,0 +1,357 @@
+{
+  "seller": {
+    "vat_number": "399999999900003",
+    "name": "شركة الاختبار للتجارة",
+    "cr_number": "1010010000",
+    "cr_scheme": "CRN",
+    "address": {
+      "street": "طريق الملك فهد",
+      "building_number": "1234",
+      "district": "العليا",
+      "city": "الرياض",
+      "postal_code": "12345",
+      "country": "SA"
+    }
+  },
+  "defaults": {
+    "issue_date": "2026-10-01",
+    "issue_time": "10:15:30",
+    "icv": 7,
+    "pih": "NWZlY2ViNjZmZmM4NmYzOGQ5NTI3ODZjNmQ2OTZjNzljMmRiYzIzOWRkNGU5MWI0NjcyOWQ3M2EyN2ZiNTdlOQ=="
+  },
+  "buyers": {
+    "registered": {
+      "name": "مؤسسة المشتري المحدودة",
+      "vat_number": "399999999800003",
+      "id": "1010101010",
+      "id_scheme": "CRN",
+      "address": {
+        "street": "شارع التحلية",
+        "building_number": "8228",
+        "district": "السليمانية",
+        "city": "الرياض",
+        "postal_code": "12244",
+        "country": "SA"
+      }
+    },
+    "citizen": {
+      "name": "محمد عبدالله",
+      "id": "1000000008",
+      "id_scheme": "NAT",
+      "address": {
+        "street": "شارع الأمير سلطان",
+        "city": "جدة",
+        "country": "SA"
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "name": "simplified_single_line",
+      "form": "simplified",
+      "number": "INV-0001",
+      "lines": [
+        {
+          "name": "خدمة استشارية",
+          "quantity": 1,
+          "unit_price": 100
+        }
+      ]
+    },
+    {
+      "name": "simplified_several_lines",
+      "form": "simplified",
+      "number": "INV-0002",
+      "lines": [
+        {
+          "name": "Coffee beans 1kg",
+          "quantity": 2,
+          "unit_price": 10.5
+        },
+        {
+          "name": "قماش",
+          "quantity": 3.5,
+          "unit_price": 4.55,
+          "unit": "MTR"
+        },
+        {
+          "name": "Grinder",
+          "quantity": 1,
+          "unit_price": 99.99
+        }
+      ]
+    },
+    {
+      "name": "prices_include_vat",
+      "form": "simplified",
+      "number": "INV-0003",
+      "prices_include_vat": true,
+      "lines": [
+        {
+          "name": "Haircut",
+          "quantity": 1,
+          "unit_price": 5.25
+        },
+        {
+          "name": "Beard trim",
+          "quantity": 1,
+          "unit_price": 5.25
+        },
+        {
+          "name": "Grilled dish",
+          "quantity": 3,
+          "unit_price": 28
+        }
+      ]
+    },
+    {
+      "name": "document_discount_net",
+      "form": "simplified",
+      "number": "INV-0004",
+      "discount": 40,
+      "lines": [
+        {
+          "name": "Service A",
+          "quantity": 7,
+          "unit_price": 13.3
+        },
+        {
+          "name": "Service B",
+          "quantity": 1,
+          "unit_price": 250
+        }
+      ]
+    },
+    {
+      "name": "document_discount_with_vat",
+      "form": "simplified",
+      "number": "INV-0005",
+      "prices_include_vat": true,
+      "discount": 40,
+      "lines": [
+        {
+          "name": "Leather chair repair",
+          "quantity": 1,
+          "unit_price": 400
+        }
+      ]
+    },
+    {
+      "name": "line_discounts",
+      "form": "simplified",
+      "number": "INV-0006",
+      "lines": [
+        {
+          "name": "Notebook",
+          "quantity": 3,
+          "unit_price": 20,
+          "discount": 50,
+          "discount_type": "amount"
+        },
+        {
+          "name": "Pen",
+          "quantity": 10,
+          "unit_price": 2.75,
+          "discount": 10,
+          "discount_type": "percent",
+          "description": "Blue, 0.7mm"
+        }
+      ]
+    },
+    {
+      "name": "mixed_treatments",
+      "form": "simplified",
+      "number": "INV-0007",
+      "prices_include_vat": true,
+      "discount": 10,
+      "lines": [
+        {
+          "name": "Shampoo",
+          "quantity": 1,
+          "unit_price": 115
+        },
+        {
+          "name": "Medicine",
+          "quantity": 2,
+          "unit_price": 30,
+          "tax_category": "Z",
+          "tax_reason_code": "VATEX-SA-35"
+        },
+        {
+          "name": "Tip",
+          "quantity": 1,
+          "unit_price": 20,
+          "tax_category": "O"
+        }
+      ]
+    },
+    {
+      "name": "exempt_two_reasons",
+      "form": "standard",
+      "number": "INV-0008",
+      "buyer": "registered",
+      "lines": [
+        {
+          "name": "Loan arrangement fee",
+          "quantity": 1,
+          "unit_price": 500,
+          "tax_category": "E",
+          "tax_reason_code": "VATEX-SA-29"
+        },
+        {
+          "name": "Residential rent",
+          "quantity": 1,
+          "unit_price": 3000,
+          "tax_category": "E",
+          "tax_reason_code": "VATEX-SA-30"
+        }
+      ]
+    },
+    {
+      "name": "net_prices_divided_by_sender",
+      "form": "simplified",
+      "number": "INV-0009",
+      "lines": [
+        {
+          "name": "Dish",
+          "quantity": 1,
+          "unit_price": 24.347826086956523
+        },
+        {
+          "name": "Juice",
+          "quantity": 1,
+          "unit_price": 8.695652173913045
+        }
+      ]
+    },
+    {
+      "name": "standard_registered_buyer",
+      "form": "standard",
+      "number": "INV-0010",
+      "buyer": "registered",
+      "delivery_date": "2026-09-30",
+      "lines": [
+        {
+          "name": "Server rack",
+          "quantity": 2,
+          "unit_price": 4500
+        },
+        {
+          "name": "Installation",
+          "quantity": 1,
+          "unit_price": 750
+        }
+      ]
+    },
+    {
+      "name": "standard_buyer_without_vat",
+      "form": "standard",
+      "number": "INV-0011",
+      "buyer": "citizen",
+      "lines": [
+        {
+          "name": "Private tutoring",
+          "quantity": 4,
+          "unit_price": 150,
+          "tax_category": "Z",
+          "tax_reason_code": "VATEX-SA-EDU"
+        }
+      ]
+    },
+    {
+      "name": "credit_note_simplified",
+      "form": "simplified",
+      "kind": "credit",
+      "number": "CRN-0001",
+      "billing_reference": "INV-0002",
+      "reason": "Returned goods",
+      "lines": [
+        {
+          "name": "Grinder",
+          "quantity": 1,
+          "unit_price": 99.99
+        }
+      ]
+    },
+    {
+      "name": "debit_note_standard",
+      "form": "standard",
+      "kind": "debit",
+      "number": "DBN-0001",
+      "buyer": "registered",
+      "billing_reference": "INV-0010",
+      "reason": "Price adjustment",
+      "lines": [
+        {
+          "name": "Installation (extra hours)",
+          "quantity": 2,
+          "unit_price": 125
+        }
+      ]
+    },
+    {
+      "name": "fractional_quantity",
+      "form": "simplified",
+      "number": "INV-0012",
+      "lines": [
+        {
+          "name": "Fabric",
+          "quantity": 1.5,
+          "unit_price": 4.55,
+          "unit": "MTR"
+        }
+      ]
+    },
+    {
+      "name": "many_units_with_discount_and_vat",
+      "form": "simplified",
+      "number": "INV-0013",
+      "prices_include_vat": true,
+      "discount": 3,
+      "lines": [
+        {
+          "name": "Bread",
+          "quantity": 12,
+          "unit_price": 1
+        },
+        {
+          "name": "Milk",
+          "quantity": 3,
+          "unit_price": 6.5
+        }
+      ]
+    },
+    {
+      "name": "allowance_remainder",
+      "form": "simplified",
+      "number": "INV-0014",
+      "discount": 0.1,
+      "lines": [
+        {
+          "name": "Washer",
+          "quantity": 3,
+          "unit_price": 1
+        }
+      ]
+    },
+    {
+      "name": "allowance_remainder_standard",
+      "form": "standard",
+      "number": "INV-0015",
+      "buyer": "registered",
+      "discount": 1,
+      "lines": [
+        {
+          "name": "Bolt",
+          "quantity": 7,
+          "unit_price": 0.33
+        },
+        {
+          "name": "Nut",
+          "quantity": 9,
+          "unit_price": 0.21
+        }
+      ]
+    }
+  ]
+}
