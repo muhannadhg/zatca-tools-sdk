@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 — 2026-10-03
+
+- Help links: BR-CO-15 (invoice total with VAT) now opens its own guide in the ZATCA error reference, which documents 138 codes.
+
 ## 0.1.1 — 2026-10-03
 
 - README: the Fatoora paragraph in English.

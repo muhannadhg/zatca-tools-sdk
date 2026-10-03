@@ -6,6 +6,7 @@
     "guide": "/en/docs/errors/{slug}",
     "reference": "/en/docs/errors#{code}",
     "guides": [
+        "BR-CO-15",
         "BR-CUSTOM-VALIDATION-01",
         "BR-KSA-03",
         "BR-KSA-04",
@@ -71,6 +72,7 @@
     ],
     "codes": [
         "BR-CL-KSA-14",
+        "BR-CO-15",
         "BR-CUSTOM-VALIDATION-01",
         "BR-KSA-03",
         "BR-KSA-04",

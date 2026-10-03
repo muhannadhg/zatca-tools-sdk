@@ -72,7 +72,7 @@ def test_warnings_are_accepted_with_their_messages_and_links(spec, test_credenti
 
 
 def test_a_rejection_is_a_result_with_zatcas_reasons(spec, test_credentials, simple_invoice):
-    zatca = make(spec, test_credentials, reply(400, verdict({"reportingStatus": "NOT_REPORTED"}, errors=[("BR-KSA-37", "Building number"), ("BR-CO-15", "Total")])))
+    zatca = make(spec, test_credentials, reply(400, verdict({"reportingStatus": "NOT_REPORTED"}, errors=[("BR-KSA-37", "Building number"), ("invoiceTotal_QRCODE_INVALID", "QR total")])))
     result = zatca.submit(zatca.create_invoice(simple_invoice))
     assert not result.success and result.status == "NOT_REPORTED" and result.validation_status == "ERROR"
     assert result.error.code == "BR-KSA-37" and result.error.source == "zatca"

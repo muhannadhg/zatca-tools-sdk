@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "zatca-tools-sdk"
-version = "0.1.1"
+version = "0.1.2"
 description = "ZATCA (Fatoora) Phase 2 e-invoicing for Saudi Arabia: onboarding, UBL XML, signing, hashing, QR codes, reporting, clearance and PDF/A-3 invoices — run entirely from your own application."
 readme = "README.md"
 license = "MIT"
